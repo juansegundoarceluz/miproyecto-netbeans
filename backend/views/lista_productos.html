@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+             <link rel="stylesheet" type="text/css" href="../../assets/css/estilos.css">  
+             
+    </head>
+    <body>
+    <center>
+        <div>lista de productos</div>
+        <div> 
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>NOMBRE</th>
+                    <th>DESCRIPCION</th>
+                    <th>PRECIO</th>
+                    <th>CATEGORIA ID</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php foreach ($lista_pro as $listaproductos) { ?>
+                <tr>
+                    <td><?php echo $listaproductos['id']?></td>
+                    <td><?php echo $listaproductos['nombre_producto']?></td>
+                    <td><?php echo $listaproductos['descripcion']?></td>
+                    <td><?php echo $listaproductos['precio']?></td>
+                    <td><?php echo $listaproductos['categoria-id']?></td>
+                </tr>
+                <?php } ?>
+        </table>
+    </div>
+    <a href="productos.php?add">agregar</a>
+</center>
+    
+    
+                    
+                    
+        
+  
+    </body>
+</html>
